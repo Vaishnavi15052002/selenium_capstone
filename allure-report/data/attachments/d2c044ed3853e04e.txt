@@ -1,0 +1,11 @@
+Broken links found:
+https://demoqa.com/ - HTTPSConnectionPool(host='demoqa.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)')))
+https://demoqa.com/ - HTTPSConnectionPool(host='demoqa.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)')))
+https://demoqa.com/ - HTTPSConnectionPool(host='demoqa.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)')))
+javascript:void(0) - No connection adapters were found for 'javascript:void(0)'
+javascript:void(0) - No connection adapters were found for 'javascript:void(0)'
+javascript:void(0) - No connection adapters were found for 'javascript:void(0)'
+javascript:void(0) - No connection adapters were found for 'javascript:void(0)'
+javascript:void(0) - No connection adapters were found for 'javascript:void(0)'
+javascript:void(0) - No connection adapters were found for 'javascript:void(0)'
+javascript:void(0) - No connection adapters were found for 'javascript:void(0)'

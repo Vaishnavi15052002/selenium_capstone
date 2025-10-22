@@ -1,0 +1,6 @@
+selenium
+openpyxl
+pytest
+pytest-xdist
+allure-pytest
+pyautogui
