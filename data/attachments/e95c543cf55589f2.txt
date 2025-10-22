@@ -1,0 +1,3 @@
+✅ Login successful — no alert appeared.
+✅ Login verified — logout link visible.
+✅ Logged out successfully.
