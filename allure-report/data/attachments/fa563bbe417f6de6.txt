@@ -1,0 +1,2 @@
+✅ Login successful — no alert appeared.
+❌ Login failed — logout link not visible.

@@ -1,9 +1,11 @@
 import pytest
-from utils.driver_factory import get_driver
+from utils.driver_factory import DriverFactory
 from utils.screenshot import take_screenshot
 
-def test_screenshot_demo():
-    driver = get_driver("chrome")
+@pytest.mark.parametrize("browser_name", ["chrome", "edge"])
+def test_screenshot_demo(browser_name):
+    # Get driver for the current browser
+    driver = DriverFactory.get_driver(browser_name=browser_name, headless=False)
     driver.get("https://www.demoblaze.com/")
     driver.maximize_window()
 

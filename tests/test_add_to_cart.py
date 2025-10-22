@@ -1,13 +1,16 @@
-from selenium import webdriver
+import pytest
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from utils.driver_factory import DriverFactory  # import your factory
 
-def test_add_to_cart():
-    driver = webdriver.Chrome()
-    driver.get("https://www.demoblaze.com/")
-    driver.maximize_window()
+
+@pytest.mark.parametrize("browser_name", ["chrome", "edge"])
+def test_add_to_cart(browser_name):
+    driver = DriverFactory.get_driver(browser_name=browser_name, headless=False)
     wait = WebDriverWait(driver, 10)
+
+    driver.get("https://www.demoblaze.com/")
 
     # Click on Samsung Galaxy S6
     wait.until(EC.element_to_be_clickable((By.LINK_TEXT, "Samsung galaxy s6"))).click()

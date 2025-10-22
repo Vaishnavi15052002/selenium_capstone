@@ -1,10 +1,14 @@
 import pytest
-from utils.driver_factory import get_driver
+from utils.driver_factory import DriverFactory
 from pages.demoqa_multiple_windows import DemoQAMultipleWindows
 import time
 
-def test_multiple_windows():
-    driver = get_driver("chrome")
+
+@pytest.mark.parametrize("browser_name", ["chrome", "edge"])
+def test_multiple_windows(browser_name):
+    # Get driver for the current browser
+    driver = DriverFactory.get_driver(browser_name=browser_name, headless=False)
+
     page = DemoQAMultipleWindows(driver)
     page.open_url("https://demoqa.com/browser-windows")
 
